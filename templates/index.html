@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Sentiment Analyzer</title>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 50px;">
+
+    <h1>🎬 Movie Sentiment Analyzer</h1>
+
+    <form action="/predict_form" method="post">
+        <textarea name="review" rows="6" cols="60"
+            placeholder="Enter your movie review here...">{{ review if review else "" }}</textarea>
+        <br><br>
+        <button type="submit">Predict Sentiment</button>
+    </form>
+
+    {% if prediction is defined %}
+        <hr>
+        <h2>Prediction: {{ prediction }}</h2>
+        <h3>Confidence: {{ confidence }}</h3>
+    {% endif %}
+
+</body>
+</html>
