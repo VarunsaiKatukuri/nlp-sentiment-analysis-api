@@ -60,30 +60,33 @@ Reason: Best balance of accuracy, speed, and probability calibration.
 
 ## 📂 Project Structure
 
+## 📁 Project Structure
+
+```
 nlp-sentiment-analysis-api/
 │
 ├── api/
-│ └── app.py
+│   └── app.py
 │
 ├── src/
-│ ├── data_preprocessing.py
-│ └── feature_engineering.py
+│   ├── data_preprocessing.py
+│   └── feature_engineering.py
 │
 ├── models/
-│ ├── logistic_regression.pkl
-│ ├── naive_bayes.pkl
-│ ├── svm.pkl
-│ └── tfidf_vectorizer.pkl
+│   ├── logistic_regression.pkl
+│   ├── naive_bayes.pkl
+│   ├── svm.pkl
+│   └── tfidf_vectorizer.pkl
 │
 ├── templates/
-│ └── index.html
+│   └── index.html
 │
 ├── notebooks/
-│ └── 01_data_exploration.ipynb
+│   └── 01_data_exploration.ipynb
 │
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
