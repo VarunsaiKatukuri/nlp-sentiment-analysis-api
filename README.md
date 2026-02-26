@@ -58,8 +58,6 @@ Reason: Best balance of accuracy, speed, and probability calibration.
 
 ---
 
-## 📂 Project Structure
-
 ## 📁 Project Structure
 
 ```
