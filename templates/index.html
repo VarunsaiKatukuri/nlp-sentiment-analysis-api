@@ -8,9 +8,30 @@
     <h1>🎬 Movie Sentiment Analyzer</h1>
 
     <form action="/predict_form" method="post">
+
         <textarea name="review" rows="6" cols="60"
             placeholder="Enter your movie review here...">{{ review if review else "" }}</textarea>
         <br><br>
+
+        <!-- Model Selection Dropdown -->
+        <label for="model_choice"><b>Select Model:</b></label>
+        <select name="model_choice">
+            <option value="logistic"
+                {% if selected_model == "logistic" %}selected{% endif %}>
+                Logistic Regression
+            </option>
+            <option value="naive_bayes"
+                {% if selected_model == "naive_bayes" %}selected{% endif %}>
+                Naive Bayes
+            </option>
+            <option value="svm"
+                {% if selected_model == "svm" %}selected{% endif %}>
+                SVM
+            </option>
+        </select>
+
+        <br><br>
+
         <button type="submit">Predict Sentiment</button>
     </form>
 
